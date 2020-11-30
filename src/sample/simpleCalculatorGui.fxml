@@ -10,7 +10,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="600.0" text="SIMPLE CALCULATOR">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="600.0" text="SIMPLE CALCULATOR">
          <font>
             <Font name="GungSeo Regular" size="20.0" />
          </font>
@@ -64,9 +64,14 @@
             <Insets top="10.0" />
          </VBox.margin>
       </HBox>
+      <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" opacity="0.0" prefHeight="35.0" prefWidth="600.0" text="* Please enter two numbers" textFill="#c90707">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
       <VBox prefHeight="60.0" prefWidth="600.0">
          <children>
-            <Button fx:id="button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showResult" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: lightblue;" text="Calculate" textAlignment="CENTER">
+            <Button fx:id="button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showResult" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: #0b647f#0b647f;" text="Calculate" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="GungSeo Regular" size="20.0" />
                </font>
@@ -76,13 +81,9 @@
             </Button>
          </children>
          <VBox.margin>
-            <Insets top="40.0" />
+            <Insets top="10.0" />
          </VBox.margin>
       </VBox>
-      <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" opacity="0.0" prefHeight="17.0" prefWidth="600.0" text="* Please enter two numbers" textFill="#c90707">
-         <VBox.margin>
-            <Insets top="10.0" />
-         </VBox.margin></Label>
       <HBox layoutX="10.0" layoutY="52.0" prefHeight="19.0" prefWidth="600.0">
          <children>
             <Label text="Result">

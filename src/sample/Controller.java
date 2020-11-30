@@ -19,10 +19,10 @@ public class Controller {
         } else{
             errorMessage.setStyle("-fx-opacity: 0");
 
-            int number1 = Integer.parseInt(inputA.getText());
-            int number2 = Integer.parseInt(inputB.getText());
+            double number1 = Double.parseDouble(inputA.getText());
+            double number2 = Double.parseDouble(inputB.getText());
 
-            int sum = number1+number2;
+            double sum = number1+number2;
             textField1.clear();
             System.out.println("Button calculate was clicked");
             textField1.appendText(String.valueOf(sum));
